@@ -1,11 +1,20 @@
 import React from "react";
+import { Home } from "./Pages";
+import { Routes, Route } from "react-router-dom";
+import { Footer, Header } from "./Components/Layout";
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<h1 className="text-3xl font-bold underline ">Hello world!</h1>
-			</header>
+		<div
+			className="container-fluid d-flex flex-column back-beige"
+			style={{ minHeight: "100vh" }}>
+			<Header />
+			<div className="pt-4">
+				<Routes>
+					<Route path="/" element={<Home />}></Route>
+				</Routes>
+			</div>
+			<Footer />
 		</div>
 	);
 }

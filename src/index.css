@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+.back-beige {
+    background-color: #f5f5dc!important;
+}
+
+.back-taupe {
+    background-color: #927C66 !important;
+}
+
+.back-blanc{
+    background-color: #ffffff!important;
+}
+

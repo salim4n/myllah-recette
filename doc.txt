@@ -1,0 +1,28 @@
+code couleurs :
+
+beige : #f5f5dc -primaire (ecriture en noir)
+taupe : #927C66 -secondaire (ecriture en blanc)
+blanc : #ffffff -tertiaire
+
+Description application : 
+
+- PWA React, hebergé sur azure, plan ->azure static web app
+- UI -> tailwind css et daisyUI
+- Azure function -> CRUD
+-Auth -> Azure AD
+- BDD -> MongoDB (plan gratuit)
+- Service externe -> chatGpt , pour obtenir des recettes aléatoires ou pouvoir effectuer une recherche par nom de recette
+
+Grace aux azure function, au mode PWA et MongoDb, nous pouvons obtenir une application mobile de qualité et ceci
+sans aucun frais meme à la fin de la periode d'essais Azure.
+
+Objectif en tant que développeur :
+
+-Produire une application simple mais de qualité, prouver la maitrise des function azure, de la mise en place d'une authentication autre que JWT,
+ d'interargir avec une base de donnée NoSQL. De créer une architecture cloud simple et maitriser les concepts clef du framework React.
+
+L'utilisatrice souhaite pouvoir se connecter via son compte IOS.
+
+Pourquoi ne pas utiliser Net maui simplement : 
+
+- Car l'utilisatrice souhaite profiter de l'application sur son IPhone, je n'ai pas de mac ni de compte développeur IOS.
