@@ -2,6 +2,7 @@ import React from "react";
 import { Home } from "./Pages";
 import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "./Components/Layout";
+import { RecipeDetails } from "./Components";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<div className="pt-4">
 				<Routes>
 					<Route path="/" element={<Home />}></Route>
+					<Route path="/recipeDetails" element={<RecipeDetails />}></Route>
 				</Routes>
 			</div>
 			<Footer />
