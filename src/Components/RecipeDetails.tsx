@@ -5,7 +5,6 @@ import { Recipe } from "../Models";
 function RecipeDetails() {
 	const location = useLocation();
 	const recipe: Recipe = location.state.recipe;
-	console.table(recipe);
 
 	return (
 		<div className="container pt-4 pt-md-5">
@@ -18,7 +17,7 @@ function RecipeDetails() {
 						<span className="list-unlisted">
 							<h3 className="blanc">Description</h3>
 						</span>
-						<p>{recipe.description}</p>
+						<p className="blanc">{recipe.description}</p>
 					</div>
 					<br />
 				</div>
