@@ -14,7 +14,7 @@ function Card({ recipe }: { recipe: Recipe }) {
 	return (
 		<span onClick={handleClick}>
 			<div className="card " style={{ width: "18rem" }}>
-				<img src={recipe.image} className="card-img-top" alt="..." />
+				<img src={recipe.imageUri} className="card-img-top" alt="..." />
 				<div className="card-body back-taupe rounded-bottom">
 					<div className="text-center">
 						<h5 className="card-title">{recipe.title}</h5>

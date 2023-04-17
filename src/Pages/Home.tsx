@@ -7,41 +7,36 @@ function Home() {
 		{
 			id: 1,
 			title: "Recette 1",
-			ingredients: ["courgette", "carotte"],
-			instructions: ["Faites ci", "Faites ça"],
-			image:
+			description: "faites comme ceci et comme cela",
+			imageUri:
 				"https://th.bing.com/th/id/OIP.PnbGvvv0ZIzHyRoAL_DhcAHaHa?pid=ImgDet&rs=1",
 		},
 		{
 			id: 2,
 			title: "Recette 2",
-			ingredients: ["aubergine", "poivron"],
-			instructions: ["Faites ceci", "Faites cela"],
-			image:
+			description: "faites comme ceci et comme cela",
+			imageUri:
 				"https://th.bing.com/th/id/OIP.PnbGvvv0ZIzHyRoAL_DhcAHaHa?pid=ImgDet&rs=1",
 		},
 		{
 			id: 3,
 			title: "Recette 3",
-			ingredients: ["pomme de terre", "oignon"],
-			instructions: ["Faites comme ça", "Faites comme ci"],
-			image:
+			description: "faites comme ceci et comme cela",
+			imageUri:
 				"https://th.bing.com/th/id/OIP.PnbGvvv0ZIzHyRoAL_DhcAHaHa?pid=ImgDet&rs=1",
 		},
 		{
 			id: 4,
 			title: "Recette 4",
-			ingredients: ["tomate", "concombre"],
-			instructions: ["Faites de cette façon", "Faites de cette autre façon"],
-			image:
+			description: "faites comme ceci et comme cela",
+			imageUri:
 				"https://th.bing.com/th/id/OIP.PnbGvvv0ZIzHyRoAL_DhcAHaHa?pid=ImgDet&rs=1",
 		},
 		{
 			id: 5,
 			title: "Recette 5",
-			ingredients: ["chou-fleur", "brocoli"],
-			instructions: ["Faites ainsi", "Faites comme ça"],
-			image:
+			description: "faites comme ceci et comme cela",
+			imageUri:
 				"https://th.bing.com/th/id/OIP.PnbGvvv0ZIzHyRoAL_DhcAHaHa?pid=ImgDet&rs=1",
 		},
 	]);

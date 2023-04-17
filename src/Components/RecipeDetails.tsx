@@ -16,35 +16,15 @@ function RecipeDetails() {
 				<div className="col-7">
 					<div className="list-group back-taupe text-center">
 						<span className="list-unlisted">
-							<h3 className="blanc">INGREDIENTS</h3>
+							<h3 className="blanc">Description</h3>
 						</span>
-						{recipe.ingredients &&
-							recipe.ingredients.map((ingredient) => (
-								<span className="list-group-item back-taupe">
-									<h5 className="blanc text-bold">
-										<em>{ingredient}</em>
-									</h5>
-								</span>
-							))}
+						<p>{recipe.description}</p>
 					</div>
 					<br />
-					<div className="list-group back-taupe text-center">
-						<span className="list-unlisted">
-							<h3 className="blanc">INSTRUCTIONS</h3>
-						</span>
-						{recipe.instructions &&
-							recipe.instructions.map((instruction) => (
-								<span className="list-group-item list-group-item-action flex-column align-items-start back-taupe ">
-									<h5 className="blanc text-bold">
-										<em>{instruction}</em>
-									</h5>
-								</span>
-							))}
-					</div>
 				</div>
 				<div className="col-5">
 					<img
-						src={recipe.image}
+						src={recipe.imageUri}
 						width="100%"
 						style={{ borderRadius: "50%" }}
 						alt="No content"></img>
