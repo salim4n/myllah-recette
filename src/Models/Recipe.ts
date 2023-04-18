@@ -1,6 +1,6 @@
 export default interface Recipe {
 	id: number;
-	title: string;
+	name: string;
 	description: string;
 	imageUri: string;
 }
