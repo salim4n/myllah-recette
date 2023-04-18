@@ -9,7 +9,7 @@ function RecipeDetails() {
 	return (
 		<div className="container pt-4 pt-md-5">
 			<div className="row text-center">
-				<h1 className=" taupe">{recipe.title}</h1>
+				<h1 className=" taupe">{recipe.name}</h1>
 			</div>
 			<div className="row">
 				<div className="col-7">
@@ -26,7 +26,7 @@ function RecipeDetails() {
 						src={recipe.imageUri}
 						width="100%"
 						style={{ borderRadius: "50%" }}
-						alt="No content"></img>
+						alt=""></img>
 				</div>
 			</div>
 		</div>

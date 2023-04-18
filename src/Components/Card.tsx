@@ -6,18 +6,21 @@ function Card({ recipe }: { recipe: Recipe }) {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
-		console.log("lets go");
-		console.log(recipe.title);
 		navigate("/recipeDetails", { state: { recipe: recipe } });
 	};
 
 	return (
 		<span onClick={handleClick}>
 			<div className="card " style={{ width: "18rem" }}>
-				<img src={recipe.imageUri} className="card-img-top" alt="..." />
+				<img
+					src={recipe.imageUri}
+					className="card-img-top"
+					alt="..."
+					style={{ height: "200px", objectFit: "cover" }}
+				/>
 				<div className="card-body back-taupe rounded-bottom">
 					<div className="text-center">
-						<h5 className="card-title">{recipe.title}</h5>
+						<h5 className="card-title blanc">{recipe.name}</h5>
 					</div>
 				</div>
 			</div>

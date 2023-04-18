@@ -6,8 +6,22 @@ function Footer() {
 			className="navbar fixed-bottom back-taupe rounded-pill wid "
 			style={{ height: "100px" }}>
 			<div className="container-fluid">
-				<a className="navbar-brand" href="#">
-					<h3 className="text-light">Zone de Navigation</h3>
+				<a className="navbar-brand" href="/">
+					<button className="btn btn-light taupe rounded-pill">Accueil</button>
+				</a>
+				<a className="navbar-brand" href="/createRecipe">
+					<button className="btn btn-light taupe rounded-pill">
+						Créer une recette
+					</button>
+				</a>
+				<a className="navbar-brand" href="/">
+					<button className="btn btn-light taupe rounded-pill">Accueil</button>
+				</a>
+				<a className="navbar-brand" href="/">
+					<button className="btn btn-light taupe rounded-pill">Accueil</button>
+				</a>
+				<a className="navbar-brand" href="/">
+					<button className="btn btn-light taupe rounded-pill">Accueil</button>
 				</a>
 			</div>
 		</nav>

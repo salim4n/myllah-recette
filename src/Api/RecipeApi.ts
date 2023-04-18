@@ -19,8 +19,37 @@ const RecipeApi = createApi({
 			}),
 			providesTags: ["Recipes"],
 		}),
+		createRecipe: builder.mutation({
+			query: ({ data }) => ({
+				url: "Recipe",
+				method: "POST",
+				body: data,
+			}),
+			invalidatesTags: ["Recipes"],
+		}),
+		updateRecipe: builder.mutation({
+			query: ({ data, id }) => ({
+				url: "Recipe/" + id,
+				method: "PUT",
+				body: data,
+			}),
+			invalidatesTags: ["Recipes"],
+		}),
+		deleteRecipe: builder.mutation({
+			query: ({ id }) => ({
+				url: "Recipe/" + id,
+				method: "DELETE",
+			}),
+			invalidatesTags: ["Recipes"],
+		}),
 	}),
 });
 
-export const { useGetRecipesQuery, useGetRecipeByIdQuery } = RecipeApi;
+export const {
+	useGetRecipesQuery,
+	useGetRecipeByIdQuery,
+	useCreateRecipeMutation,
+	useUpdateRecipeMutation,
+	useDeleteRecipeMutation,
+} = RecipeApi;
 export default RecipeApi;

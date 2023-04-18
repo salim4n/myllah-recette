@@ -1,5 +1,5 @@
 import React from "react";
-import { Home } from "./Pages";
+import { CreateRecipePage, Home } from "./Pages";
 import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "./Components/Layout";
 import { RecipeDetails } from "./Components";
@@ -14,6 +14,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />}></Route>
 					<Route path="/recipeDetails" element={<RecipeDetails />}></Route>
+					<Route path="/createRecipe" element={<CreateRecipePage />}></Route>
 				</Routes>
 			</div>
 			<Footer />

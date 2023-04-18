@@ -1,3 +1,4 @@
 import Recipe from "./Recipe";
+import CreateRecipeForm from "./CreateRecipeForm";
 
-export type { Recipe };
+export type { Recipe, CreateRecipeForm };
