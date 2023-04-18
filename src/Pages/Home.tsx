@@ -11,7 +11,6 @@ function Home() {
 
 	useEffect(() => {
 		if (!isLoading) {
-			console.table(data);
 			dispatch(setRecipes(data));
 		}
 	}, [isLoading]);
@@ -23,12 +22,17 @@ function Home() {
 	return (
 		<div className="container">
 			<div className="row pb-4 pt-4">
-				{data.length > 0 &&
+				{data != null ? (
+					data.length > 0 &&
 					data.map((recipe: Recipe, index: number) => (
 						<div className="col-sm-6 col-lg-3 p-2">
 							<Card recipe={recipe} key={index} />
 						</div>
-					))}
+					))
+				) : (
+					<h2 className="text-center taupe">Aucune Recettes</h2>
+				)}
+				{}
 			</div>
 		</div>
 	);

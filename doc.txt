@@ -7,10 +7,10 @@ blanc : #ffffff -tertiaire
 Description application : 
 
 - PWA React, hebergé sur azure, plan ->azure static web app
-- UI -> tailwind css et daisyUI
-- Azure function -> CRUD
+- UI -> bootstrap
+- Azure function -> CRUD || actuellement Asp net core API sur azure (plan app service)
 -Auth -> Azure AD
-- BDD -> MongoDB (plan gratuit)
+- BDD -> MongoDB (plan gratuit) || actuellement Azure SQL Database (penser à changer avant le mois de Fevrier 2024)
 - Service externe -> chatGpt , pour obtenir des recettes aléatoires ou pouvoir effectuer une recherche par nom de recette
 
 Grace aux azure function, au mode PWA et MongoDb, nous pouvons obtenir une application mobile de qualité et ceci

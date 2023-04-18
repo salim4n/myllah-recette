@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
 	return (
 		<nav
-			className="navbar fixed-bottom back-taupe rounded-pill wid "
+			className="navbar fixed-bottom back-taupe rounded-pill pt-4"
 			style={{ height: "100px" }}>
 			<div className="container-fluid">
 				<a className="navbar-brand" href="/">

@@ -1,46 +1,58 @@
-import React, { useState } from "react";
-import { CreateRecipeForm } from "../Models";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import { Recipe, UpdateRecipeForm } from "../Models";
 import { useNavigate } from "react-router-dom";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
-function CreateRecipePage() {
+function UpdateRecipePage() {
+	const location = useLocation();
+	const recipe: Recipe = location.state.recipe;
 	const [name, setName] = useState("");
 	const [description, setDescription] = useState("");
 	const [file, setFile] = useState<File>();
-	const navigate = useNavigate();
 	const [isLoading, setIsLoading] = useState(false);
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		setName(recipe.name);
+		setDescription(recipe.description);
+	}, [isLoading]);
 
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		setIsLoading(true);
-		const recipe: CreateRecipeForm = {
+
+		const recipeUpdate: UpdateRecipeForm = {
 			name,
 			description,
 			file: file!,
-			userName: "Camille",
 		};
 
 		const formData = new FormData();
 
-		formData.append("Name", recipe.name);
-		formData.append("Description", recipe.description);
-		formData.append("File", recipe.file);
-		formData.append("UserName", recipe.userName);
+		formData.append("Name", recipeUpdate.name);
+		formData.append("Description", recipeUpdate.description);
+		formData.append("File", recipeUpdate.file);
 
-		await fetch("https://myllah-recipe-api.azurewebsites.net/api/Recipe", {
-			method: "POST",
-			body: formData,
-		})
+		await fetch(
+			`https://myllah-recipe-api.azurewebsites.net/api/Recipe/${recipe.id}`,
+			{
+				method: "PUT",
+				body: formData,
+			},
+		)
 			.then((response) => setIsLoading(false))
 			.then((data) => navigate("/"))
 			.catch((error) => console.error(error));
 	};
 
+	console.log(recipe.name);
+
 	return (
 		<div className="container pb-4">
 			<div className="row pb-4">
-				<h1 className="taupe">Créer une nouvelle recette</h1>
+				<h1 className="taupe">Modifier une recette</h1>
 			</div>
 
 			<form method="post" onSubmit={handleSubmit} encType="multipart/form-data">
@@ -49,7 +61,7 @@ function CreateRecipePage() {
 						type="submit"
 						className="btn blanc back-taupe rounded-pill"
 						disabled={isLoading || !name || !description || !file}>
-						{isLoading ? "Création en cours..." : "Créer la recette"}
+						{isLoading ? "Modification en cours..." : "Modifier la recette"}
 					</button>
 				</div>
 				<div className="row">
@@ -92,4 +104,4 @@ function CreateRecipePage() {
 	);
 }
 
-export default CreateRecipePage;
+export default UpdateRecipePage;
