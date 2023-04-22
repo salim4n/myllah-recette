@@ -1,5 +1,10 @@
 import React from "react";
-import { CreateRecipePage, Home, UpdateRecipePage } from "./Pages";
+import {
+	CreateRecipePage,
+	GenerateRecipe,
+	Home,
+	UpdateRecipePage,
+} from "./Pages";
 import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "./Components/Layout";
 import { RecipeDetails } from "./Components";
@@ -16,6 +21,7 @@ function App() {
 					<Route path="/recipeDetails" element={<RecipeDetails />}></Route>
 					<Route path="/createRecipe" element={<CreateRecipePage />}></Route>
 					<Route path="/updateRecipe" element={<UpdateRecipePage />}></Route>
+					<Route path="/generateRecipe" element={<GenerateRecipe />}></Route>
 				</Routes>
 			</div>
 			<Footer />

@@ -14,8 +14,8 @@ function Footer() {
 						Créer une recette
 					</button>
 				</a>
-				<a className="navbar-brand" href="/">
-					<button className="btn btn-light taupe rounded-pill">Accueil</button>
+				<a className="navbar-brand" href="/generateRecipe">
+					<button className="btn btn-light taupe rounded-pill">GPT-4</button>
 				</a>
 				<a className="navbar-brand" href="/">
 					<button className="btn btn-light taupe rounded-pill">Accueil</button>
