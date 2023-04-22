@@ -2,29 +2,9 @@ import React from "react";
 
 function Footer() {
 	return (
-		<nav
-			className="navbar fixed-bottom back-taupe rounded-pill pt-4"
-			style={{ height: "100px" }}>
-			<div className="container-fluid">
-				<a className="navbar-brand" href="/">
-					<button className="btn btn-light taupe rounded-pill">Accueil</button>
-				</a>
-				<a className="navbar-brand" href="/createRecipe">
-					<button className="btn btn-light taupe rounded-pill">
-						Créer une recette
-					</button>
-				</a>
-				<a className="navbar-brand" href="/generateRecipe">
-					<button className="btn btn-light taupe rounded-pill">GPT-4</button>
-				</a>
-				<a className="navbar-brand" href="/">
-					<button className="btn btn-light taupe rounded-pill">Accueil</button>
-				</a>
-				<a className="navbar-brand" href="/">
-					<button className="btn btn-light taupe rounded-pill">Accueil</button>
-				</a>
-			</div>
-		</nav>
+		<div className="footer fixed-bottom text-center p-3 back-taupe text-white rounded-pill">
+			&copy;Made with <i className="bi bi-heart-fill"></i> by salim4n
+		</div>
 	);
 }
 

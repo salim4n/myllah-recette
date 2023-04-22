@@ -23,3 +23,24 @@
 .blanc{
     color: #ffffff !important;
 }
+
+                img:hover {
+                    transform: scale(1.1) rotate(5deg);
+                    border: 2px solid black;
+                    box-shadow: 10px 5px 5px black;
+                }
+        
+                .hoverable {
+                    position: relative;
+                }
+        
+                .hoverable:hover {
+                    z-index: 10;
+                    border: 2px solid black;
+                    box-shadow: 10px 5px 5px black;
+                    transform: scale(1.1) rotate(-1.2deg);
+                }
+        
+                .title {
+                    z-index: 10;
+                }
