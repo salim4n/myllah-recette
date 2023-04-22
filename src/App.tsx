@@ -4,7 +4,7 @@ import {
 	GenerateRecipe,
 	Home,
 	UpdateRecipePage,
-} from "./Pages";
+} from "./Models/Pages";
 import { Routes, Route } from "react-router-dom";
 import { Footer, Header } from "./Components/Layout";
 import { RecipeDetails } from "./Components";

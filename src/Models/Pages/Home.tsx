@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Card, Loader } from "../Components";
-import { Recipe } from "../Models";
-import { useGetRecipesQuery } from "../Api/RecipeApi";
+import { Card, Loader } from "../../Components";
+import { Recipe } from "..";
+import { useGetRecipesQuery } from "../../Api/RecipeApi";
 import { useDispatch } from "react-redux";
-import { setRecipes } from "../Storage/Redux/RecipeSlice";
+import { setRecipes } from "../../Storage/Redux/RecipeSlice";
 
 function Home() {
 	const { data, isLoading } = useGetRecipesQuery(null);
