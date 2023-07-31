@@ -44,3 +44,30 @@
                 .title {
                     z-index: 10;
                 }
+
+                                .prediction-container {
+                                    background-color: #927C66;
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                    margin-top: 10px;
+                                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                }
+                
+                                .prediction-container h4 {
+                                    color: #927c66;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    margin-bottom: 8px;
+                                }
+                
+                                .prediction-container ul {
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                
+                                .prediction-container li {
+                                    margin-bottom: 4px;
+                                    font-size: 16px;
+                                    color: #555;
+                                }

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Vision App",
+  "name": "Vision App Powered by Tensorflow.js",
   "icons": [
     {
       "src": "favicon.ico",
